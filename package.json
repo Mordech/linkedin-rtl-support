@@ -1,0 +1,13 @@
+{
+  "name": "linkedin-hebrew-support",
+  "version": "0.2.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "web-ext": "^7.4.0"
+  },
+  "scripts": {
+    "build": "web-ext build --overwrite-dest --source-dir=src --artifacts-dir=dist"
+  }
+}
