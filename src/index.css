@@ -1,0 +1,11 @@
+[role='textbox'] {
+  text-align: start !important;
+}
+/* 
+  Handle the case where the user has the Grammarly extension installed.
+  The Grammarly extension uses the !important flag on its CSS.
+  This is a workaround to override the top position of the extension.
+ */
+grammarly-extension {
+  top: 10px !important;
+}

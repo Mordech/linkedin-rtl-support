@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
+  "name": "Linkedin hebrew support",
+  "version": "0.2.0",
+  "description": "Adds hebrew support to linkedin text fields",
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["index.js"],
+      "css": ["index.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
