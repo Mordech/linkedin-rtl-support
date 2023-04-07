@@ -1,9 +1,15 @@
 {
-  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
-  "name": "Linkedin hebrew support",
-  "version": "0.2.0",
-  "description": "Adds hebrew support to linkedin text fields",
+  "name": "Linkedin RTL support",
+  "version": "0.3.0",
+  "description": "Adds multilingual support to linkedin text fields",
+  "icons": {
+    "16": "images/icon_16.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png",
+    "256": "images/icon_256.png",
+    "512": "images/icon_512.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://*.linkedin.com/*"],
@@ -11,5 +17,10 @@
       "css": ["index.css"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "linkedin-rtl-support@mordech.com"
+    }
+  }
 }
