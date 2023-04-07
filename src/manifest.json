@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
   "name": "Linkedin RTL support",
   "version": "0.3.0",
@@ -18,5 +17,10 @@
       "css": ["index.css"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "linkedin-rtl-support@mordech.com"
+    }
+  }
 }
