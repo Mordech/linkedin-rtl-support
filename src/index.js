@@ -19,5 +19,6 @@
   body &&
     observer.observe(body, {
       childList: true,
+      subtree: true,
     });
 })();
